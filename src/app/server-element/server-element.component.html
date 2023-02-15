@@ -1,0 +1,11 @@
+<div class="card" style="width:18rem;">
+  <img width="35px"*ngIf="server.type === 'server'" src="https://pngimg.com/uploads/lexus/small/lexus_PNG62.png" class="card-img-top" alt="...">
+  <img width="35px"*ngIf="server.type === 'blueprint'" src="https://image.shutterstock.com/image-photo/car-renault-duster-dacia-suv-260nw-1787667347.jpg" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title" *ngIf="server.type === 'server'" [ngStyle]="{color: 'red'}">{{ server.serverName }}</h5>
+    <h5 class="card-title" *ngIf="server.type === 'blueprint'" [ngStyle]="{color: 'blue'}">{{ server.serverName }}</h5>
+    <p class="card-text">{{ server.serverContent }}</p>
+  </div>
+</div>
+
+<p>Test Style</p>

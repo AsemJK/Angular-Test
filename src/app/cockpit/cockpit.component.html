@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-12 form-group">
+    <label for="name">Server Name</label>
+    <input class="form-control" [(ngModel)]="newServerName" />
+  </div>
+  <div class="col-md-12 form-group">
+    <label for="name">Server Content</label>
+    <input class="form-control" [(ngModel)]="newServerContent" />
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <button class="btn btn-success" (click)="onAddServer()">Add Server</button>
+    <button class="btn btn-primary" (click)="onAddBluePrint()">Add Bluprint</button>
+  </div>
+</div>
